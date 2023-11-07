@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sixing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+:root {
+  --submitheader-: rgb(150, 126, 163);
+  --text-:rgb(49, 40, 54);
+}
+
+body {
+  background-color: rgb(235, 223, 242);
+  color: var(--text-);
+  height: 100vh;
+  overflow-x:hidden;
+}
+
+
+
+#header ul {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+  align-items: center;
+  padding-right: 30px;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: bottom;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--submitheader-);
+  min-width: 100%;
+
+ }
+
+a {
+  text-decoration:none;
+  color: var(--text-);
+}
+
+a:hover {
+  color: rgb(104, 76, 120);
+}
+
+
+#benefits {
+  text-align: center;
+  padding: 20px;
+
+
+}
+
+#benefits #email {
+  display: block;
+  margin: auto;
+  width: 40%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#benefits #submit {
+  min-width: 20%;
+  background-color: var(--submitheader-);
+  color: var(--text-);
+ }
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.plan1, .plan2, .plan3 {
+  border: 3px solid var(--submitheader-);
+  border-radius: 10px;
+  line-height: 2rem;
+  padding: 20px;
+}
+
+#plans ul {
+  list-style-type: none;
+}
+
+#plans #upgrade {
+  color: var(--text-);
+  background-color: var(--submitheader-);
+  min-width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#plans h2, #plans h1, #plans p, #plans li {
+  text-align: center;
+}
+
+footer {
+  background-color: var(--submitheader-);
+  color: var(--text-);
+  padding-top: 10px;
+}
+
+@media only screen and (min-width: 800px) {
+#plans {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+}
+
+@media only screen and (max-width:800px) {
+  #plans {
+  display: flex;
+  padding: 20px;
+  margin: 0 100px 0 100px;
+  gap: 20px;
+  flex-direction: column;
+}
+}
